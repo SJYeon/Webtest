@@ -5,13 +5,17 @@ package com.service.impl;
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
 
+import javax.annotation.Resource;
+
 import com.beans.Users;
 import com.common.MD5;
 import com.dao.UserDao;
 import com.service.UserService;
 
 public class UserServiceImpl implements UserService {
+	
 		Users user;
+		@Resource(name="userdao")
 		UserDao dao;
 		/* (non-Javadoc)
 		 * @see com.service.impl.UserService#register(com.beans.Users)

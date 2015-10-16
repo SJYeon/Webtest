@@ -3,19 +3,22 @@ package com.service.impl;
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
 
+import javax.annotation.Resource;
+
 import com.beans.Users;
 import com.common.MD5;
 import com.dao.UserDao;
 import com.service.LoginService;
 
 public class LoginServiceImpl implements LoginService {
+	@Resource(name="userdao")
 	private UserDao dao;
 
 
 	public UserDao getDao() {
 		return dao;
 	}
-
+	
 	public void setDao(UserDao dao) {
 		this.dao = dao;
 	}

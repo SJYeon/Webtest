@@ -34,7 +34,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<iframe frameborder="0" seamless allowtransparency="true" src="./header.html" width="100%" height="50px"></iframe>
 	<div id="con">
     		<div id="login" align="center">
-            	<form action="loginaction">
+            	<form action="loginaction" method="post">
                 	<input class="Style_input" type="search" name="user.name" placeholder="请输入用户名"><br>
                     <input class="Style_input" type="password" name="user.password" placeholder="请输入密码"><br>
                     <input class="Style_input" type="submit">

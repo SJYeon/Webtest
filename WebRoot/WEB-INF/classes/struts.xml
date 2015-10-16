@@ -4,12 +4,26 @@
 <struts>
 	
 		<package name="default" extends="struts-default">
+		<interceptors>
+			<interceptor name="test" class="com.intercopter.IntercopterTest" ></interceptor>
+		</interceptors>
+		
 			<action name="loginaction" class="login" method="login">
 				<result name="success" >/success.jsp</result>
 				<result name="fail" >/fail.jsp</result>
 			</action>
 			<action name="register" class="useraction" method="register">
 				<result name="success">/success.jsp</result>
+			</action>
+			
+			
+			
+			<action name="intercopterTest" class="intercopterTest" method="intercopterTest">
+				
+				<result name="success">/success.jsp</result>
+				<result name="login">/login.jsp</result>
+				<interceptor-ref name="defaultStack"/>
+				<interceptor-ref name="test"/>
 			</action>
 		</package>
 </struts>    

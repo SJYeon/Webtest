@@ -20,7 +20,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<iframe frameborder="0" seamless allowtransparency="true" src="./header.html" width="100%" height="50px"></iframe>
 <div id="cont1">
         		<div id="form" align="center">
-                <form action="register">
+                <form action="register" method="post">
                 <input class="Style_input" placeholder="用户名" name="user.name" type="search"><br>
                 <input class="Style_input" placeholder="邮箱" name="user.email" type="email"><br>
                 <input class="Style_input" placeholder="密码" type="password"><br>
