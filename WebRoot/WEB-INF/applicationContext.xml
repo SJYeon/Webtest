@@ -26,6 +26,8 @@
 		</property>
 		<property name="username" value="root"></property>
 		<property name="password" value="12345"></property>
+		
+		    
 	</bean>
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
@@ -60,8 +62,7 @@
 		
 		
 	<aop:config>
-		<aop:aspect>
-		
+		<aop:aspect>	
 		<aop:pointcut expression="execution(* com.action.LoginAction.*(..))" id="logpointcut"/>
 		</aop:aspect>
 	
